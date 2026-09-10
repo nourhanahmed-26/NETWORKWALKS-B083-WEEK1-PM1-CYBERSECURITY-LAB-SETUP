@@ -1,4 +1,4 @@
-# NETWORKWALKS-B083-WEEK1-PM1-CYBERSECURITY-LAB-SETUP# Kali Linux on VirtualBox — Network & Snapshot Setup
+# Kali Linux on VirtualBox — Network & Snapshot Setup
 
 Documentation of the network configuration and snapshot workflow for a fresh Kali Linux 2026.2 install running in Oracle VirtualBox.
 
@@ -84,3 +84,13 @@ Resulting snapshot, named **"My Fresh Kali Linux after installation"**, with a d
     ├── 07-snapshot-list-before-naming.jpeg
     └── 08-desktop-running.jpeg
 \```
+
+## 🔗 Tools & Resources
+
+* 7-Zip: https://7-zip.org/download.html
+* VirtualBox: https://virtualbox.org/wiki/Downloads
+* Kali Linux: https://kali.org/get-kali
+
+## Author
+
+**Waqas Karim**
