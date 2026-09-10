@@ -18,12 +18,59 @@
 | 🔌 Network Adapter | Intel PRO/1000 MT Desktop (82540EM)  |
 
 ---
+# 🪜 Lab Setup Procedure
+
+
+## Step 1. Install 7-Zip
+
+7-Zip was installed to extract the Kali Linux virtual-machine package, which may be distributed as a `.7z` archive.
+
+**Tool:** 7-Zip
+
+---
+
+## Step 2. Install VirtualBox
+
+VirtualBox was installed as the hypervisor.
+
+---
+
+## Step 3. Create the NAT Network
+
+A dedicated NAT Network was created in VirtualBox.
+
+Configuration:
+Network Name: NatNetwork
+IPv4 Prefix:  10.0.0.0/24
+DHCP:         Enabled
+IPv6:         Disabled
+
+![](<img width="1920" height="1080" alt="Screenshot (401)" src="https://github.com/user-attachments/assets/c2759153-0d4d-454b-90ae-e2f1604dd4b0" />
+)
+
+A **NAT Network** was selected because multiple virtual machines connected to the same NAT Network can communicate with one another while also having outbound network connectivity.
+
+This will allow future attacker and target VMs to communicate within the lab.
+
+
+---
+## Step 4. Import Kali Linux
+
+The Kali Linux virtual machine was downloaded from the official Kali Linux website and imported into VirtualBox.
+
+The VM network adapter was configured as follows:
+![](<img width="1920" height="1080" alt="Screenshot (398)" src="https://github.com/user-attachments/assets/f75312ca-18c0-4db1-a2e8-f2e71027485c" />
+)
+A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
+
+
 
 ## 1️⃣ Boot
 
 The VM boots into the standard GRUB menu for Kali GNU/Linux.
 
-![Boot menu](images/03-boot-menu.jpeg)
+![Boot menu](<img width="1600" height="900" alt="WhatsApp Image 2026-09-10 at 11 23 56 PM (1)" src="https://github.com/user-attachments/assets/839daf64-f8c7-45c2-8df5-78de7da819c7" />
+)
 
 ---
 
@@ -31,29 +78,24 @@ The VM boots into the standard GRUB menu for Kali GNU/Linux.
 
 Adapter 1 is attached to a **NAT Network** (named `NatNetwork`) rather than plain NAT — this lets the VM reach the internet while keeping the option open to add more VMs to the same virtual network later. Promiscuous Mode is set to **Allow All**.
 
-![Network adapter settings](images/04-network-adapter-settings.jpeg)
+![Network adapter settings](<img width="1600" height="900" alt="WhatsApp Image 2026-09-10 at 11 23 56 PM (2)" src="https://github.com/user-attachments/assets/13be05f9-f9ca-4ea4-85f5-a191f435c824" />
+)
+The VM network adapter was configured as follows:
 
-VM overview confirming the adapter and storage configuration:
-
-![VM details overview](images/05-vm-details-overview.jpeg)
-
+```text
+Adapter 1
+Attached to: NAT Network
+Network:     NatNetwork
+Adapter Type: Intel PRO/1000 MT Desktop
+```
 ---
 
 ## 3️⃣ Verifying the IP address
 
-Inside the guest, `ip a` confirms the interface is up and has picked up an address from the NAT network's DHCP:
-
-\```
-eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP
-    link/ether 08:00:27:5a:87:bc brd ff:ff:ff:ff:ff:ff
-    inet 10.0.0.3/24 brd 10.0.0.255 scope global dynamic noprefixroute eth0
-\```
-
-![ip a output in terminal](images/01-network-config-ip-a.jpeg)
-
 Desktop after boot, network active ✅:
 
-![Kali desktop running](images/08-desktop-running.jpeg)
+![Kali desktop running](<img width="1448" height="1086" alt="WhatsApp Image 2026-09-10 at 11 20 29 PM" src="https://github.com/user-attachments/assets/ee9ade58-708f-461e-975b-bbb63655aef9" />
+)
 
 ---
 
@@ -61,17 +103,9 @@ Desktop after boot, network active ✅:
 
 Once networking was confirmed working, a snapshot was taken to preserve this known-good state before making further changes.
 
-Snapshot list before naming the first snapshot:
 
-![Snapshot list, no snapshots yet](images/07-snapshot-list-before-naming.jpeg)
 
-Snapshot dialog(s) — taken across multiple VirtualBox windows while testing:
 
-![Multiple VirtualBox windows with snapshot dialog open](images/02-multi-window-snapshot-dialog.jpeg)
-
-Resulting snapshot, named **"My Fresh Kali Linux after installation"**, with a description noting the working state and IP configuration:
-
-![Snapshot with description](images/06-snapshot-with-description.jpeg)
 
 ---
 
@@ -83,23 +117,7 @@ Resulting snapshot, named **"My Fresh Kali Linux after installation"**, with a d
 
 ---
 
-## 📂 Repo structure
 
-\```
-.
-├── README.md
-└── images/
-    ├── 01-network-config-ip-a.jpeg
-    ├── 02-multi-window-snapshot-dialog.jpeg
-    ├── 03-boot-menu.jpeg
-    ├── 04-network-adapter-settings.jpeg
-    ├── 05-vm-details-overview.jpeg
-    ├── 06-snapshot-with-description.jpeg
-    ├── 07-snapshot-list-before-naming.jpeg
-    └── 08-desktop-running.jpeg
-\```
-
----
 
 ## 🔗 Tools & Resources
 
@@ -112,3 +130,7 @@ Resulting snapshot, named **"My Fresh Kali Linux after installation"**, with a d
 ## ✍️ Author
 
 **Waqas Karim**
+
+## 📌 Project Information
+
+**Program Name:** Cybersecurity at Networkwalks | **Week:** 01 | **Project:** Cybersecurity & Pentesting Lab Setup | **Repository:** GitHub
