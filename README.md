@@ -121,9 +121,9 @@ Once networking was confirmed working, a snapshot was taken to preserve this kno
 
 ## 🔗 Tools & Resources
 
-* 🗜️ [7-Zip](https://7-zip.org/download.html)
-* 📦 [VirtualBox](https://virtualbox.org/wiki/Downloads)
-* 🐉 [Kali Linux](https://kali.org/get-kali)
+* 🗜️ **7-Zip:** [https://7-zip.org/download.html](https://7-zip.org/download.html)
+* 📦**VirtualBox:** [https://virtualbox.org/wiki/Downloads](https://virtualbox.org/wiki/Downloads)
+* 🐉 **Kali Linux:** [https://kali.org/get-kali](https://kali.org/get-kali)
 
 ---
 
