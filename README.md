@@ -73,7 +73,7 @@ A shared folder was also configured for transferring required files between the 
 
 The VM boots into the standard GRUB menu for Kali GNU/Linux.
 
-![Boot menu](<img width="1600" height="900" alt="WhatsApp Image 2026-09-10 at 11 23 56 PM (1)" src="https://github.com/user-attachments/assets/839daf64-f8c7-45c2-8df5-78de7da819c7" />
+![Kali desktop running](images/08-desktop-running.jpeg)
 )
 
 ---
