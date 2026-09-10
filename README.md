@@ -1,6 +1,6 @@
 # 🐉 Kali Linux on VirtualBox 
 
-> Documentation of the network configuration and snapshot workflow for a fresh Kali Linux 2026.2 install running in Oracle VirtualBox.
+> Documentation of the network configuration and snapshot workflow for a fresh Kali Linux 
 
 ---
 
