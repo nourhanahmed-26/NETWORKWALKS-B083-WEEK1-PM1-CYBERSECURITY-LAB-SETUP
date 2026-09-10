@@ -103,7 +103,19 @@ Desktop after boot, network active ✅:
 
 ---
 
-## 4️⃣ Taking a snapshot 📸
+# 💡 What I Learned
+
+Through this project, I learned how to create and configure a virtual environment for cybersecurity practice.
+
+The most important concepts I picked up was:
+
+### 1. NAT vs NAT Network
+
+A standard NAT configuration and a NAT Network serve different purposes.
+
+A NAT Network allows multiple VMs connected to the same virtual network to communicate with one another while providing network address translation for external connectivity.
+
+### 2.Taking a snapshot 📸
 
 Once networking was confirmed working, a snapshot was taken to preserve this known-good state before making further changes.
 
@@ -119,6 +131,9 @@ Once networking was confirmed working, a snapshot was taken to preserve this kno
 - 🏷️ Snapshot name: `My Fresh Kali Linux after installation`
 - 💬 Snapshot description: *"It is working good. I have set the IP address."*
 - ⏪ Taking a snapshot here means any future misconfiguration (networking, dependencies, etc.) can be rolled back to this exact point instantly via **Snapshots → Restore** in VirtualBox Manager.
+![snapshot](<img width="1600" height="900" alt="WhatsApp Image 2026-09-10 at 11 23 56 PM (5)" src="https://github.com/user-attachments/assets/3f435d8c-3ace-4a6e-aa70-1a84a14b99d1" />)
+![snapshot](<img width="1600" height="900" alt="WhatsApp Image 2026-09-10 at 11 23 56 PM (4)" src="https://github.com/user-attachments/assets/5e813957-7ba7-4ec7-abec-c7e0a359ad64" />)
+
 
 ---
 
