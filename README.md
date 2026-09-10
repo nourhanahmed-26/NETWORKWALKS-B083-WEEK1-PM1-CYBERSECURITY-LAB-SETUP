@@ -63,7 +63,8 @@ The VM network adapter was configured as follows:
 )
 A shared folder was also configured for transferring required files between the host operating system and the Kali VM.
 
-
+---
+#INSIDE KALI LINUX
 
 ## 1️⃣ Boot
 
