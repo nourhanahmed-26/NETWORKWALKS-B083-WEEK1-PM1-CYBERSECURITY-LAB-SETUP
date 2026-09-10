@@ -103,6 +103,7 @@ Desktop after boot, network active ✅:
 
 Once networking was confirmed working, a snapshot was taken to preserve this known-good state before making further changes.
 
+![](<img width="1448" height="1086" alt="WhatsApp Image 2026-09-10 at 11 20 36 PM" src="https://github.com/user-attachments/assets/250cc556-8952-428f-9d82-4221ab605a2a" />)
 
 
 
